@@ -1,0 +1,110 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202003%2F24%2F20200324125536_mfilx.jpg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1727278276&t=ed95d13c7286a90f75aa1f5735023ce2';
+}
+
+#player {
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 400px;
+    text-align: center;
+    position: relative; /* 添加相对定位 */
+    overflow: visible; /* 防止元素被裁剪 */
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 居中对齐 */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+#controls {
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 居中对齐 */
+    margin-top: 20px; /* 添加顶部间距 */
+}
+
+#play-button {
+    background-color: #007AFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px; /* 圆形按钮 */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative; /* 相对定位 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+
+#play-button:hover {
+    background-color: #0056b3;
+    transform: translateY(1px) scale(1.1); /* 放大效果 */
+}
+
+#play-button i {
+    font-size: 24px; /* 调整图标大小 */
+}
+
+#progress-bar {
+    width: 100%;
+    height: 3px;
+    background-color: #dcdcdc;
+    margin-top: 0px; /* 添加顶部间距 */
+    position: relative; /* 相对定位 */
+}
+
+#progress-bar-fill {
+    height: 100%;
+    background-color: #007AFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 新增背景图链接输入框和加载背景图按钮的样式 */
+#background-url {
+    margin-bottom: 10px;
+}
+
+#load-background-button {
+    background-color: #007AFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+#load-background-button:hover {
+    background-color: #0056b3;
+    transform: translateY(1px) scale(1.1); /* 放大效果 */
+}

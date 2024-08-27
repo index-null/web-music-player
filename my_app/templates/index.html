@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Player</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...your-integrity-hash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="player">
+        <h1>Web Player</h1>
+        <input type="text" id="audio-url" placeholder="Enter audio URL">
+        <button id="play-button">Play</button>
+        <audio id="audio-element" controls></audio>
+
+        <!-- 新增背景图链接输入框和加载背景图按钮 -->
+        <input type="text" id="background-url" placeholder="Enter background image URL">
+        <button id="load-background-button">Load Background</button>
+    </div>
+    <script src="{{ url_for('static', filename='js/player.js') }}"></script>
+</body>
+</html>
