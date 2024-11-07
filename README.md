@@ -16,6 +16,6 @@ pip install -r requirements.txt
 python run.py
 ```
 
-# Demo-image
+# Demo-image 示例图片
 
 ![image-20240827083036498](https://chuhsing-blog-bucket.oss-cn-shenzhen.aliyuncs.com/chuhsing/202408270830741.png)
